@@ -234,14 +234,17 @@ elif [ "$VER" = "24" ]; then
 elif [ "$VER" = "25" ]; then
 		echo ""
 		echo "Preparing..."
-		yum --obsoletes --exclude=kernel* update -y
-		yum install sudo -y
-		sudo yum install libunwind libicu -y
+		dnf update -y
+		dnf install sudo -y
+		sudo dnf install libunwind libicu -y
 		curl -sSL -o dotnet.tar.gz https://go.microsoft.com/fwlink/?LinkID=835025
 		sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet.tar.gz -C /opt/dotnet
 		sudo ln -s /opt/dotnet/dotnet /usr/local/bin
-		yum -y install http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm epel-release
-		sudo yum install git opus opus-devel ffempeg tmux -y
+		sudo dnf install wget -y
+		sudo dnf inssudo dnf copr enable red/libgcrypt.so.11tall https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -y
+		sudo dnf install http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm -y
+		sudo dnf install ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/Knurpht:/Extras/openSUSE_Tumbleweed/x86_64/libgcrypt11-1.5.4-2.73.x86_64.rpm -y
+		sudo dnf install git opus opus-devel ffmpeg tmux -y
 	else
 		echo -e "Your OS $OS $VER $ARCH probably can run Microsoft .NET Core. \nContact NadekoBot's support on Discord with screenshot."
 		rm nadekoautoinstaller.sh
