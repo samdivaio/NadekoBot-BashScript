@@ -82,3 +82,4 @@ rm -r "$tempdir"
 echo ""
 echo "Installation Complete."
 exit 0
+bash linuxAIO.sh
