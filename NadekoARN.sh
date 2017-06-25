@@ -6,7 +6,7 @@ cd NadekoBot
 dotnet restore && dotnet build --configuration Release
 cd -
 cd NadekoBot/src/NadekoBot
-while :; do dotnet run -c Release; sleep 5s; done
+while :; do dotnet run -c Release -- {0} {1} {2}; sleep 5s; done
 echo ""
 echo "That didn't work? Please report in #NadekoLog Discord Server."
 sleep 3s

@@ -15,7 +15,7 @@ dotnet restore
 dotnet build --configuration Release
 cd src/NadekoBot
 echo "Running NadekoBot. Please wait."
-dotnet run --configuration Release
+dotnet run --configuration Release -- {0} {1} {2}
 echo "Done"
 
 exit 0

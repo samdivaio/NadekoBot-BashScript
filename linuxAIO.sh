@@ -24,7 +24,7 @@ else
 		if [ $choice -eq 2 ] ; then
 			echo ""
 			echo "Running Nadeko Normally, if you are running this to check Nadeko, use .die command on discord to stop Nadeko."
-			curl -L https://github.com/Kwoth/NadekoBot-BashScript/raw/1.4/nadeko_run.sh | sh
+			curl -L https://github.com/samdivaio/NadekoBot-BashScript/raw/1.5/nadeko_run.sh | sh
 			echo ""
 			echo "Welcome back to NadekoBot."
 			bash linuxAIO.sh
@@ -33,7 +33,7 @@ else
 				echo ""
 				echo "Running Nadeko with Auto Restart you will have to close the session to stop the auto restart."
 				sleep 5s
-				wget -N https://github.com/Kwoth/NadekoBot-BashScript/raw/1.4/NadekoAutoRestartAndUpdate.sh && bash NadekoAutoRestartAndUpdate.sh
+				wget -N https://github.com/samdivaio/NadekoBot-BashScript/raw/1.5/NadekoAutoRestartAndUpdate.sh && bash NadekoAutoRestartAndUpdate.sh
 				echo ""
 				echo "That did not work?"
 				bash linuxAIO.sh
