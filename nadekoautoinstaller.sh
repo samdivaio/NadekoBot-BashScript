@@ -137,7 +137,7 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
-	sudo apt-get install dotnet-sdk-2.1 -y
+	sudo apt-get install dotnet-sdk-2.1.201 -y
 	echo "Installing prerequisites..."
 	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3.5-dev redis-server -y
 	sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
@@ -158,7 +158,7 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
-	sudo apt-get install dotnet-sdk-2.1 -y
+	sudo apt-get install dotnet-sdk-2.1.201 -y
 	echo "Installing prerequisites..."
 	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3-pip redis-server -y
 	sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
@@ -178,7 +178,7 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
-	sudo apt-get install dotnet-sdk-2.1 -y
+	sudo apt-get install dotnet-sdk-2.1.201 -y
 	echo "Installing prerequisites..."
 	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3-pip redis-server -y
 	sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
@@ -198,7 +198,7 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
-	sudo apt-get install dotnet-sdk-2.1 -y
+	sudo apt-get install dotnet-sdk-2.1.201 -y
 	echo "Installing prerequisites..."
 	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3-pip redis-server -y
 	sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
@@ -218,7 +218,7 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
-	sudo apt-get install dotnet-sdk-2.1 -y
+	sudo apt-get install dotnet-sdk-2.1.201 -y
 	echo "Installing prerequisites..."
 	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3-pip redis-server -y
 	sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
@@ -242,7 +242,7 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
-	sudo apt-get install dotnet-sdk-2.1 -y
+	sudo apt-get install dotnet-sdk-2.1.201 -y
 	echo "Installing prerequisites..."
 	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3-pip redis-server -y
 	sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
@@ -264,7 +264,7 @@ elif [ "$OS" = "Debian" ]; then
 		sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 		sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 		sudo apt-get update
-		sudo apt-get install dotnet-sdk-2.1 -y
+		sudo apt-get install dotnet-sdk-2.1.201 -y
 		echo "Installing prerequisites..."
 		echo "deb http://ftp.debian.org/debian jessie-backports main" | tee /etc/apt/sources.list.d/debian-backports.list
 		sudo apt-get update && sudo apt install ffmpeg -y
@@ -288,7 +288,7 @@ elif [ "$OS" = "Debian" ]; then
 		sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 		sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 		sudo apt-get update
-		sudo apt-get install dotnet-sdk-2.1 -y
+		sudo apt-get install dotnet-sdk-2.1.201 -y
 		echo "Installing prerequisites..."
 		echo "deb http://ftp.debian.org/debian jessie-backports main" | tee /etc/apt/sources.list.d/debian-backports.list
 		sudo apt-get update && sudo apt install ffmpeg -y
@@ -318,7 +318,7 @@ elif [ "$OS" = "LinuxMint" ]; then
 		echo "Installing Git..."
 		sudo apt-get install git -y
 		echo "Installing .NET Core..."
-		sudo apt-get install dotnet-sdk-2.1 -y
+		sudo apt-get install dotnet-sdk-2.1.201 -y
 		echo "Installing prerequisites..."
 		sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3-pip redis-server -y
 		sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
@@ -341,7 +341,7 @@ elif [ "$OS" = "LinuxMint" ]; then
 		echo "Installing Git..."
 		sudo apt-get install git -y
 		echo "Installing .NET Core..."
-		sudo apt-get install dotnet-sdk-2.1 -y
+		sudo apt-get install dotnet-sdk-2.1.201 -y
 		echo "Installing prerequisites..."
 		sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3.5-dev redis-server -y
 		sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
@@ -364,7 +364,7 @@ elif [ "$OS" = "LinuxMint" ]; then
 		sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 		sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 		sudo apt-get update
-		sudo apt-get install dotnet-sdk-2.1 -y
+		sudo apt-get install dotnet-sdk-2.1.201 -y
 		echo "Installing prerequisites..."
 		echo "deb http://ftp.debian.org/debian jessie-backports main" | tee /etc/apt/sources.list.d/debian-backports.list
 		sudo apt-get update && sudo apt install ffmpeg -y
@@ -387,7 +387,7 @@ elif [ "$OS" = "CentOS" ]; then
 		sudo yum -y groupinstall development
 		sudo yum -y install https://centos7.iuscommunity.org/ius-release.rpm
 		sudo yum --obsoletes --exclude=kernel* update -y
-		sudo yum install python python36u python36u-pip python36u-devel dotnet-sdk-2.1 -y
+		sudo yum install python python36u python36u-pip python36u-devel dotnet-sdk-2.1.201 -y
 		sudo yum install redis -y
 		sudo systemctl start redis
 		sudo systemctl enable redis
