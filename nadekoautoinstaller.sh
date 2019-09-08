@@ -75,7 +75,15 @@ if [ "$OS" = "Ubuntu" ]; then
 		supported=1
 	elif [ "$VER" = "18.04" ]; then
 		supported=1
+	elif [ "$VER" = "18.10" ]; then
+		echo "Using Ubuntu 18.04 Installation scripts. \nIf the installation fails contact NadekoBot support."
+		sleep 5
+		supported=1
 	elif [ "$VER" = "19.04" ]; then
+		supported=1
+	elif [ "$VER" = "19.10" ]; then
+		echo "Using Ubuntu 19.04 Installation scripts. \nIf the installation fails contact NadekoBot support."
+		sleep 5
 		supported=1
 	else
 		supported=0
@@ -227,7 +235,7 @@ read -n 1 -s -p "Press any key to continue..."
 	sudo chmod a+rx /usr/local/bin/youtube-dl
 	# remove dotnet temp
 	sudo rm -f packages-microsoft-prod.deb
-	elif [ "$VER" = "18.04" ]; then
+	elif [ "$VER" = "18.04" ] && [ "$VER" = "18.10" ]; then
 	echo ""
 	echo "Preparing..."
 	sudo apt-get update
@@ -255,7 +263,7 @@ read -n 1 -s -p "Press any key to continue..."
 	sudo chmod a+rx /usr/local/bin/youtube-dl
 	# remove dotnet temp
 	sudo rm -f packages-microsoft-prod.deb
-	elif [ "$VER" = "19.04" ]; then
+	elif [ "$VER" = "19.04" ] && [ "$VER" = "19.10" ]; then
 	echo ""
 	echo "Preparing..."
 	sudo apt-get update
@@ -418,9 +426,9 @@ elif [ "$OS" = "CentOS" ]; then
 		sudo yum install libunwind libicu -y
 		sudo rpm -Uvh https://packages.microsoft.com/config/rhel/7/packages-microsoft-prod.rpm
 		sudo yum -y install http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm epel-release
-		sudo yum install git opus opus-devel ffmpeg tmux yum-utils -y
-		sudo yum -y groupinstall development
 		sudo yum -y install https://centos7.iuscommunity.org/ius-release.rpm
+		sudo yum install git2u opus opus-devel ffmpeg tmux yum-utils -y
+		sudo yum -y groupinstall development
 		sudo yum --obsoletes --exclude=kernel* update -y
 		sudo yum install python python36u python36u-pip python36u-devel dotnet-sdk-2.1 -y
 		sudo yum install redis -y
