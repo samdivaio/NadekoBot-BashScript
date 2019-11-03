@@ -244,7 +244,7 @@ read -n 1 -s -p "Press any key to continue..."
 	#wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 	#sudo dpkg -i packages-microsoft-prod.deb
 	sudo add-apt-repository universe
-	sudo apt-get install software-properties-common apt-transport-https curl gpg wget -y
+	sudo apt-get install software-properties-common apt-transport-https curl gpg -y
 	#Backup for manual installation.
 	wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
 	sudo mv -f microsoft.asc.gpg /etc/apt/trusted.gpg.d/
@@ -271,7 +271,7 @@ read -n 1 -s -p "Press any key to continue..."
 	sudo apt-get update
 	#wget -q https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 	#sudo dpkg -i packages-microsoft-prod.deb
-	sudo apt-get install software-properties-common apt-transport-https curl gpg wget -y
+	sudo apt-get install software-properties-common apt-transport-https curl gpg -y
 	#Backup for manual installation.
 	wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg
 	sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
