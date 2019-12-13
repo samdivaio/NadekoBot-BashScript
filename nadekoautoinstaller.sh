@@ -149,10 +149,6 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
-	wget -N https://download.visualstudio.microsoft.com/download/pr/39e68289-0364-4173-a12b-c6234e94c527/92f3eb83bfca8b7cd360868996763125/dotnet-sdk-2.1.607-linux-x64.tar.gz
-	mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-2.1.607-linux-x64.tar.gz -C $HOME/dotnet
-	export DOTNET_ROOT=$HOME/dotnet
-	export PATH=$PATH:$HOME/dotnet && dotnet --version
 	sudo apt-get install dotnet-sdk-2.1 -y
 	echo "Installing prerequisites..."
 	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3.5-dev redis-server snapd -y
@@ -175,10 +171,6 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
-	wget -N https://download.visualstudio.microsoft.com/download/pr/39e68289-0364-4173-a12b-c6234e94c527/92f3eb83bfca8b7cd360868996763125/dotnet-sdk-2.1.607-linux-x64.tar.gz
-	mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-2.1.607-linux-x64.tar.gz -C $HOME/dotnet
-	export DOTNET_ROOT=$HOME/dotnet
-	export PATH=$PATH:$HOME/dotnet && dotnet --version
 	sudo apt-get install dotnet-sdk-2.1 -y
 	echo "Installing prerequisites..."
 	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3-pip redis-server snapd -y
@@ -200,10 +192,6 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
-	wget -N https://download.visualstudio.microsoft.com/download/pr/39e68289-0364-4173-a12b-c6234e94c527/92f3eb83bfca8b7cd360868996763125/dotnet-sdk-2.1.607-linux-x64.tar.gz
-	mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-2.1.607-linux-x64.tar.gz -C $HOME/dotnet
-	export DOTNET_ROOT=$HOME/dotnet
-	export PATH=$PATH:$HOME/dotnet && dotnet --version
 	sudo apt-get install dotnet-sdk-2.1 -y
 	echo "Installing prerequisites..."
 	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3-pip redis-server -y
@@ -224,10 +212,6 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
-	wget -N https://download.visualstudio.microsoft.com/download/pr/39e68289-0364-4173-a12b-c6234e94c527/92f3eb83bfca8b7cd360868996763125/dotnet-sdk-2.1.607-linux-x64.tar.gz
-	mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-2.1.607-linux-x64.tar.gz -C $HOME/dotnet
-	export DOTNET_ROOT=$HOME/dotnet
-	export PATH=$PATH:$HOME/dotnet && dotnet --version
 	sudo apt-get install dotnet-sdk-2.1 -y
 	echo "Installing prerequisites..."
 	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3-pip redis-server -y
@@ -248,10 +232,6 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
-	wget -N https://download.visualstudio.microsoft.com/download/pr/39e68289-0364-4173-a12b-c6234e94c527/92f3eb83bfca8b7cd360868996763125/dotnet-sdk-2.1.607-linux-x64.tar.gz
-	mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-2.1.607-linux-x64.tar.gz -C $HOME/dotnet
-	export DOTNET_ROOT=$HOME/dotnet
-	export PATH=$PATH:$HOME/dotnet && dotnet --version
 	sudo apt-get install dotnet-sdk-2.1 -y
 	echo "Installing prerequisites..."
 	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3-pip redis-server -y
@@ -280,10 +260,6 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
-	wget -N https://download.visualstudio.microsoft.com/download/pr/39e68289-0364-4173-a12b-c6234e94c527/92f3eb83bfca8b7cd360868996763125/dotnet-sdk-2.1.607-linux-x64.tar.gz
-	mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-2.1.607-linux-x64.tar.gz -C $HOME/dotnet
-	export DOTNET_ROOT=$HOME/dotnet
-	export PATH=$PATH:$HOME/dotnet && dotnet --version
 	sudo apt-get install dotnet-sdk-2.1 -y
 	echo "Installing prerequisites..."
 	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3-pip redis-server -y
@@ -311,10 +287,6 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
-	wget -N https://download.visualstudio.microsoft.com/download/pr/39e68289-0364-4173-a12b-c6234e94c527/92f3eb83bfca8b7cd360868996763125/dotnet-sdk-2.1.607-linux-x64.tar.gz
-	mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-2.1.607-linux-x64.tar.gz -C $HOME/dotnet
-	export DOTNET_ROOT=$HOME/dotnet
-	export PATH=$PATH:$HOME/dotnet && dotnet --version
 	sudo apt-get install dotnet-sdk-2.1 -y
 	echo "Installing prerequisites..."
 	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3-pip redis-server -y
@@ -339,10 +311,6 @@ elif [ "$OS" = "Debian" ]; then
 		sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 		sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 		sudo apt-get update
-		wget -N https://download.visualstudio.microsoft.com/download/pr/39e68289-0364-4173-a12b-c6234e94c527/92f3eb83bfca8b7cd360868996763125/dotnet-sdk-2.1.607-linux-x64.tar.gz
-		mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-2.1.607-linux-x64.tar.gz -C $HOME/dotnet
-		export DOTNET_ROOT=$HOME/dotnet
-		export PATH=$PATH:$HOME/dotnet && dotnet --version && dotnet --version
 		sudo apt-get install dotnet-sdk-2.1 -y
 		echo "Installing prerequisites..."
 		echo "deb http://ftp.debian.org/debian jessie-backports main" | tee /etc/apt/sources.list.d/debian-backports.list
@@ -367,10 +335,6 @@ elif [ "$OS" = "Debian" ]; then
 		sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 		sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 		sudo apt-get update
-		wget -N https://download.visualstudio.microsoft.com/download/pr/39e68289-0364-4173-a12b-c6234e94c527/92f3eb83bfca8b7cd360868996763125/dotnet-sdk-2.1.607-linux-x64.tar.gz
-		mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-2.1.607-linux-x64.tar.gz -C $HOME/dotnet
-		export DOTNET_ROOT=$HOME/dotnet
-		export PATH=$PATH:$HOME/dotnet && dotnet --version
 		sudo apt-get install dotnet-sdk-2.1 -y
 		echo "Installing prerequisites..."
 		echo "deb http://ftp.debian.org/debian jessie-backports main" | tee /etc/apt/sources.list.d/debian-backports.list
@@ -401,10 +365,6 @@ elif [ "$OS" = "LinuxMint" ]; then
 		echo "Installing Git..."
 		sudo apt-get install git -y
 		echo "Installing .NET Core..."
-		wget -N https://download.visualstudio.microsoft.com/download/pr/39e68289-0364-4173-a12b-c6234e94c527/92f3eb83bfca8b7cd360868996763125/dotnet-sdk-2.1.607-linux-x64.tar.gz
-		mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-2.1.607-linux-x64.tar.gz -C $HOME/dotnet
-		export DOTNET_ROOT=$HOME/dotnet
-		export PATH=$PATH:$HOME/dotnet && dotnet --version
 		sudo apt-get install dotnet-sdk-2.1 -y
 		echo "Installing prerequisites..."
 		sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3-pip redis-server snapd -y
@@ -429,10 +389,6 @@ elif [ "$OS" = "LinuxMint" ]; then
 		echo "Installing Git..."
 		sudo apt-get install git -y
 		echo "Installing .NET Core..."
-		wget -N https://download.visualstudio.microsoft.com/download/pr/39e68289-0364-4173-a12b-c6234e94c527/92f3eb83bfca8b7cd360868996763125/dotnet-sdk-2.1.607-linux-x64.tar.gz
-		mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-2.1.607-linux-x64.tar.gz -C $HOME/dotnet
-		export DOTNET_ROOT=$HOME/dotnet
-		export PATH=$PATH:$HOME/dotnet && dotnet --version
 		sudo apt-get install dotnet-sdk-2.1 -y
 		echo "Installing prerequisites..."
 		sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3.5-dev redis-server snapd -y
@@ -457,10 +413,6 @@ elif [ "$OS" = "LinuxMint" ]; then
 		sudo chown root:root /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 		sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 		sudo apt-get update
-		wget -N https://download.visualstudio.microsoft.com/download/pr/39e68289-0364-4173-a12b-c6234e94c527/92f3eb83bfca8b7cd360868996763125/dotnet-sdk-2.1.607-linux-x64.tar.gz
-		mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-2.1.607-linux-x64.tar.gz -C $HOME/dotnet
-		export DOTNET_ROOT=$HOME/dotnet
-		export PATH=$PATH:$HOME/dotnet && dotnet --version
 		sudo apt-get install dotnet-sdk-2.1 -y
 		echo "Installing prerequisites..."
 		echo "deb http://ftp.debian.org/debian jessie-backports main" | tee /etc/apt/sources.list.d/debian-backports.list
