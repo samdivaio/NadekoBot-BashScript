@@ -141,17 +141,18 @@ read -n 1 -s -p "Press any key to continue..."
 	sudo apt-get install software-properties-common apt-transport-https curl -y
 	wget -q https://packages.microsoft.com/config/ubuntu/14.04/packages-microsoft-prod.deb
 	sudo dpkg -i packages-microsoft-prod.deb
-	sudo add-apt-repository ppa:jonathonf/ffmpeg-3 -y
+	# sudo add-apt-repository ppa:jonathonf/ffmpeg-3 -y
 	sudo add-apt-repository ppa:chris-lea/libsodium -y
 	sudo apt-get update
 	sudo apt-get upgrade -y
-	sudo apt-get dist-upgrade -y
+	# sudo apt-get dist-upgrade -y
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
 	sudo apt-get install dotnet-sdk-2.1 -y
 	echo "Installing prerequisites..."
-	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3.5-dev redis-server -y
+	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3.5-dev redis-server snapd -y
+	sudo snap install ffmpeg
 	sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 	sudo chmod a+rx /usr/local/bin/youtube-dl
 	# remove dotnet temp
@@ -163,16 +164,17 @@ read -n 1 -s -p "Press any key to continue..."
 	sudo apt-get install software-properties-common apt-transport-https curl -y
 	wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
 	sudo dpkg -i packages-microsoft-prod.deb
-	sudo add-apt-repository ppa:jonathonf/ffmpeg-3 -y
+	# sudo add-apt-repository ppa:jonathonf/ffmpeg-3 -y
 	sudo apt-get update
 	sudo apt-get upgrade -y
-	sudo apt-get dist-upgrade -y
+	# sudo apt-get dist-upgrade -y
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
 	sudo apt-get install dotnet-sdk-2.1 -y
 	echo "Installing prerequisites..."
-	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3-pip redis-server -y
+	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3-pip redis-server snapd -y
+	sudo snap install ffmpeg
 	sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 	sudo chmod a+rx /usr/local/bin/youtube-dl
 	# remove dotnet temp
@@ -186,7 +188,7 @@ read -n 1 -s -p "Press any key to continue..."
 	sudo dpkg -i packages-microsoft-prod.deb
 	sudo apt-get update
 	sudo apt-get upgrade -y
-	sudo apt-get dist-upgrade -y
+	# sudo apt-get dist-upgrade -y
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
@@ -206,7 +208,7 @@ read -n 1 -s -p "Press any key to continue..."
 	sudo dpkg -i packages-microsoft-prod.deb
 	sudo apt-get update
 	sudo apt-get upgrade -y
-	sudo apt-get dist-upgrade -y
+	# sudo apt-get dist-upgrade -y
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
@@ -226,7 +228,7 @@ read -n 1 -s -p "Press any key to continue..."
 	sudo dpkg -i packages-microsoft-prod.deb
 	sudo apt-get update
 	sudo apt-get upgrade -y
-	sudo apt-get dist-upgrade -y
+	# sudo apt-get dist-upgrade -y
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
@@ -254,7 +256,7 @@ read -n 1 -s -p "Press any key to continue..."
 	sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 	sudo apt-get update
 	sudo apt-get upgrade -y
-	sudo apt-get dist-upgrade -y
+	# sudo apt-get dist-upgrade -y
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
@@ -281,7 +283,7 @@ read -n 1 -s -p "Press any key to continue..."
 	sudo chown root:root /etc/apt/sources.list.d/microsoft-prod.list
 	sudo apt-get update
 	sudo apt-get upgrade -y
-	sudo apt-get dist-upgrade -y
+	# sudo apt-get dist-upgrade -y
 	echo "Installing Git..."
 	sudo apt-get install git -y
 	echo "Installing .NET Core..."
@@ -356,16 +358,17 @@ elif [ "$OS" = "LinuxMint" ]; then
 		sudo apt-get install software-properties-common apt-transport-https curl -y
 		wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
 		sudo dpkg -i packages-microsoft-prod.deb
-		sudo add-apt-repository ppa:jonathonf/ffmpeg-3 -y
+		# sudo add-apt-repository ppa:jonathonf/ffmpeg-3 -y
 		sudo apt-get update
 		sudo apt-get upgrade -y
-		sudo apt-get dist-upgrade -y
+		# sudo apt-get dist-upgrade -y
 		echo "Installing Git..."
 		sudo apt-get install git -y
 		echo "Installing .NET Core..."
 		sudo apt-get install dotnet-sdk-2.1 -y
 		echo "Installing prerequisites..."
-		sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3-pip redis-server -y
+		sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3-pip redis-server snapd -y
+		sudo snap install ffmpeg
 		sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 		sudo chmod a+rx /usr/local/bin/youtube-dl
 		# remove dotnet temp
@@ -378,17 +381,18 @@ elif [ "$OS" = "LinuxMint" ]; then
 		sudo apt-get install software-properties-common apt-transport-https curl -y
 		wget -q https://packages.microsoft.com/config/ubuntu/14.04/packages-microsoft-prod.deb
 		sudo dpkg -i packages-microsoft-prod.deb
-		sudo add-apt-repository ppa:jonathonf/ffmpeg-3 -y
+		# sudo add-apt-repository ppa:jonathonf/ffmpeg-3 -y
 		sudo add-apt-repository ppa:chris-lea/libsodium -y
 		sudo apt-get update
 		sudo apt-get upgrade -y
-		sudo apt-get dist-upgrade -y
+		# sudo apt-get dist-upgrade -y
 		echo "Installing Git..."
 		sudo apt-get install git -y
 		echo "Installing .NET Core..."
 		sudo apt-get install dotnet-sdk-2.1 -y
 		echo "Installing prerequisites..."
-		sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev ffmpeg tmux python python3.5-dev redis-server -y
+		sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3.5-dev redis-server snapd -y
+		sudo snap install ffmpeg
 		sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 		sudo chmod a+rx /usr/local/bin/youtube-dl
 		# remove dotnet temp
@@ -429,7 +433,8 @@ elif [ "$OS" = "CentOS" ]; then
 		sudo rpm -Uvh https://packages.microsoft.com/config/rhel/7/packages-microsoft-prod.rpm
 		sudo yum -y install http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm epel-release
 		sudo yum -y install https://centos7.iuscommunity.org/ius-release.rpm
-		sudo yum install git2u opus opus-devel ffmpeg tmux yum-utils -y
+		sudo yum localinstall --nogpgcheck https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-7.noarch.rpm
+		sudo yum install git2u opus opus-devel ffmpeg ffmpeg-devel tmux yum-utils -y
 		sudo yum -y groupinstall development
 		sudo yum --obsoletes --exclude=kernel* update -y
 		sudo yum install python python36u python36u-pip python36u-devel dotnet-sdk-2.1 -y
