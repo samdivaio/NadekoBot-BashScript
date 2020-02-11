@@ -141,7 +141,7 @@ read -n 1 -s -p "Press any key to continue..."
 	sudo apt-get install software-properties-common apt-transport-https curl -y
 	wget -q https://packages.microsoft.com/config/ubuntu/14.04/packages-microsoft-prod.deb
 	sudo dpkg -i packages-microsoft-prod.deb
-	sudo add-apt-repository ppa:jonathonf/ffmpeg-4 -y
+	# sudo add-apt-repository ppa:jonathonf/ffmpeg-4 -y
 	sudo add-apt-repository ppa:chris-lea/libsodium -y
 	sudo apt-get update
 	sudo apt-get upgrade -y
@@ -381,7 +381,7 @@ elif [ "$OS" = "LinuxMint" ]; then
 		sudo apt-get install software-properties-common apt-transport-https curl -y
 		wget -q https://packages.microsoft.com/config/ubuntu/14.04/packages-microsoft-prod.deb
 		sudo dpkg -i packages-microsoft-prod.deb
-		sudo add-apt-repository ppa:jonathonf/ffmpeg-4 -y
+		# sudo add-apt-repository ppa:jonathonf/ffmpeg-4 -y
 		sudo add-apt-repository ppa:chris-lea/libsodium -y
 		sudo apt-get update
 		sudo apt-get upgrade -y
