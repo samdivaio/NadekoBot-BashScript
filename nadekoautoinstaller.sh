@@ -151,8 +151,8 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing .NET Core..."
 	sudo apt-get install dotnet-sdk-2.1 -y
 	echo "Installing prerequisites..."
-	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3.5-dev redis-server ffmpeg -y
-	# sudo snap install ffmpeg
+	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3.5-dev redis-server snapd -y
+	sudo snap install ffmpeg
 	sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 	sudo chmod a+rx /usr/local/bin/youtube-dl
 	# remove dotnet temp
@@ -391,8 +391,8 @@ elif [ "$OS" = "LinuxMint" ]; then
 		echo "Installing .NET Core..."
 		sudo apt-get install dotnet-sdk-2.1 -y
 		echo "Installing prerequisites..."
-		sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3.5-dev redis-server ffmpeg -y
-		# sudo snap install ffmpeg
+		sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3.5-dev redis-server snapd -y
+		sudo snap install ffmpeg
 		sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 		sudo chmod a+rx /usr/local/bin/youtube-dl
 		# remove dotnet temp
