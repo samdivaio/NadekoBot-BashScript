@@ -141,7 +141,7 @@ read -n 1 -s -p "Press any key to continue..."
 	sudo apt-get install software-properties-common apt-transport-https curl -y
 	wget -q https://packages.microsoft.com/config/ubuntu/14.04/packages-microsoft-prod.deb
 	sudo dpkg -i packages-microsoft-prod.deb
-	# sudo add-apt-repository ppa:jonathonf/ffmpeg-3 -y
+	sudo add-apt-repository ppa:jonathonf/ffmpeg-4 -y
 	sudo add-apt-repository ppa:chris-lea/libsodium -y
 	sudo apt-get update
 	sudo apt-get upgrade -y
@@ -151,8 +151,8 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing .NET Core..."
 	sudo apt-get install dotnet-sdk-2.1 -y
 	echo "Installing prerequisites..."
-	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3.5-dev redis-server snapd -y
-	sudo snap install ffmpeg
+	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3.5-dev redis-server ffmpeg -y
+	# sudo snap install ffmpeg
 	sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 	sudo chmod a+rx /usr/local/bin/youtube-dl
 	# remove dotnet temp
@@ -164,7 +164,7 @@ read -n 1 -s -p "Press any key to continue..."
 	sudo apt-get install software-properties-common apt-transport-https curl -y
 	wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
 	sudo dpkg -i packages-microsoft-prod.deb
-	# sudo add-apt-repository ppa:jonathonf/ffmpeg-3 -y
+	sudo add-apt-repository ppa:jonathonf/ffmpeg-4 -y
 	sudo apt-get update
 	sudo apt-get upgrade -y
 	# sudo apt-get dist-upgrade -y
@@ -173,8 +173,8 @@ read -n 1 -s -p "Press any key to continue..."
 	echo "Installing .NET Core..."
 	sudo apt-get install dotnet-sdk-2.1 -y
 	echo "Installing prerequisites..."
-	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3-pip redis-server snapd -y
-	sudo snap install ffmpeg
+	sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3-pip redis-server ffmpeg -y
+	# sudo snap install ffmpeg
 	sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 	sudo chmod a+rx /usr/local/bin/youtube-dl
 	# remove dotnet temp
@@ -358,7 +358,7 @@ elif [ "$OS" = "LinuxMint" ]; then
 		sudo apt-get install software-properties-common apt-transport-https curl -y
 		wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
 		sudo dpkg -i packages-microsoft-prod.deb
-		# sudo add-apt-repository ppa:jonathonf/ffmpeg-3 -y
+		sudo add-apt-repository ppa:jonathonf/ffmpeg-4 -y
 		sudo apt-get update
 		sudo apt-get upgrade -y
 		# sudo apt-get dist-upgrade -y
@@ -367,8 +367,8 @@ elif [ "$OS" = "LinuxMint" ]; then
 		echo "Installing .NET Core..."
 		sudo apt-get install dotnet-sdk-2.1 -y
 		echo "Installing prerequisites..."
-		sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3-pip redis-server snapd -y
-		sudo snap install ffmpeg
+		sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3-pip redis-server ffmpeg -y
+		# sudo snap install ffmpeg
 		sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 		sudo chmod a+rx /usr/local/bin/youtube-dl
 		# remove dotnet temp
@@ -381,7 +381,7 @@ elif [ "$OS" = "LinuxMint" ]; then
 		sudo apt-get install software-properties-common apt-transport-https curl -y
 		wget -q https://packages.microsoft.com/config/ubuntu/14.04/packages-microsoft-prod.deb
 		sudo dpkg -i packages-microsoft-prod.deb
-		# sudo add-apt-repository ppa:jonathonf/ffmpeg-3 -y
+		sudo add-apt-repository ppa:jonathonf/ffmpeg-4 -y
 		sudo add-apt-repository ppa:chris-lea/libsodium -y
 		sudo apt-get update
 		sudo apt-get upgrade -y
@@ -391,8 +391,8 @@ elif [ "$OS" = "LinuxMint" ]; then
 		echo "Installing .NET Core..."
 		sudo apt-get install dotnet-sdk-2.1 -y
 		echo "Installing prerequisites..."
-		sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3.5-dev redis-server snapd -y
-		sudo snap install ffmpeg
+		sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev tmux python python3.5-dev redis-server ffmpeg -y
+		# sudo snap install ffmpeg
 		sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 		sudo chmod a+rx /usr/local/bin/youtube-dl
 		# remove dotnet temp
